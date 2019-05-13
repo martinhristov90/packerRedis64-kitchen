@@ -1,0 +1,8 @@
+*.box
+output-ubuntu-1604-vbox/*
+packer_cache/*
+.vagrant/*
+Gemfile.lock
+.kitchen/
+.ruby-version
+backup
