@@ -1,0 +1,17 @@
+driver:
+  name: vagrant
+
+provisioner:
+  name: shell
+platforms:
+  - name: redis64 
+    driver:
+      box: redis64
+      provider: virtualbox
+ 
+verifier:
+  name: inspec
+  inspec_tests:
+        - test/integration/default
+suites:
+  - name: default
